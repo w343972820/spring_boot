@@ -44,7 +44,25 @@ public class Hello {
 3 resources资源文件设置(文件名必需为:application.properties,配置端口号格式固定写法)
 server.port=${port:8865}
 
-4 springBoot集成SwaggerUI
+4 springBoot集成SwaggerUI,pom文件内添加以下两个依赖 (地址为:http://localhost:port/swagger-ui.html)
+<dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
+        </dependency>
 
-5 idea可在settings->plugins->lombok 比较好用
+5 idea可在settings->plugins->lombok 比较好用工具(还需添加依赖包),可在实体类上添加@Data 注解,自动添加有get,set方法
+<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
+        </dependency>
+
+
+
 
